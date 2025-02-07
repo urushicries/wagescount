@@ -174,10 +174,10 @@ def on_button_click(month):
             if tWAGESWHOLEMONTH_var1.get() == False and tSetUpShiftsForAllDays_var3.get() == False and  tIncomeFromShops_var2.get() == False:
                 nothing_picked()
             else:
-                sheetKOM = client.open("Коменда отчет").worksheet(month_data["sheet_suffix"])
-                sheetPIK = client.open("Пик отчет").worksheet(month_data["sheet_suffix"])
-                sheetJUNE = client.open("Июнь отчет").worksheet(month_data["sheet_suffix"])
-                sheetLM = client.open("Лондон отчет").worksheet(month_data["sheet_suffix"])
+                sheetKOM = client.open("1 отчет").worksheet(month_data["sheet_suffix"])
+                sheetPIK = client.open("2 отчет").worksheet(month_data["sheet_suffix"])
+                sheetJUNE = client.open("3 отчет").worksheet(month_data["sheet_suffix"])
+                sheetLM = client.open("4 отчет").worksheet(month_data["sheet_suffix"])
                 
                 if tWAGESWHOLEMONTH_var1.get() or tSetUpShiftsForAllDays_var3.get():
                     dataKOM, dataPIK, dataJUNE, dataLM = makeDataFromSheets(month_data["days"], sheetKOM, sheetPIK, sheetJUNE, sheetLM)

@@ -116,7 +116,7 @@ dataLM = None
 
 
 def delete_ranges():
-    clear_wgslist_ranges(service,"14FtsvGplg1jKXJvLJCueI8iEEnjJUtjk17NuPqeCnqo")
+    clear_wgslist_ranges(service,sheet_id)
     succes()
 
 def toggle_days():
